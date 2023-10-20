@@ -1,0 +1,61 @@
+---
+name: "mochad-mqtt-ha"
+version: 1.00
+slug: "mochad-mqtt-ha"
+description: >
+  Make X10 devices appear as MQTT devices. 
+  Requires Mochad and Mosquitto addons
+init: false
+hassio_api: true
+services:
+  - mqtt:want
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+options:
+  devices:
+    - name: "kitchen"
+      code: "A5"
+      type: "switch"
+    - name: "bedroom"
+      code: "A14"
+      type: "light"
+  mqtt:
+    - host: "xxxxxxxx"
+      port: 1883
+      user: "xxxxxxxx"
+      password: "xxxxxxxx"
+      ping: "ping/x10/_ping"
+      prefix: "home/x10"
+  mochad:
+    - host: "homeassistant"
+      port: 1099
+  hass:
+    - discovery_enable: "true"
+      startup_payload: "online"
+      status_topic: "homeassistant/status"
+      topic_prefix: "homeassistant"
+schema:
+  devices:
+    - name: str
+      code: str
+      type: list(switch|light|sensor|remote)
+      retain: bool?
+  mqtt:
+    - host: str
+      port: port
+      user: str?
+      password: password?
+      ping: str?
+      prefix: str?
+  mochad:
+    - host: str
+      port: port
+  hass:
+    - discovery_enable: str?
+      startup_payload: str?
+      status_topic: str?
+      topic_prefix: str?
