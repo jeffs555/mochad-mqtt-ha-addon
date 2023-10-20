@@ -246,13 +246,13 @@ sub read_config_file {
     }
 
 ############################################################################
-	AE::log error => "jdbg: alias: " . Dumper( \%alias );
-	AE::log error => "jdbg: devcodes: ".Dumper(\%devcodes);
-	AE::log error => "jdbg: ignore: ".Dumper(\%ignore);
-	AE::log error => "jdbg: retain: ".Dumper(\%retain);
-	AE::log error => "jdbg: appliances: ".Dumper(\%appls);
-	AE::log error => "jdbg: lights: " .Dumper(\%lights);
-	AE::log error => "jdbg: config: " .Dumper(\%config);
+#	AE::log error => "jdbg: alias: " . Dumper( \%alias );
+#	AE::log error => "jdbg: devcodes: ".Dumper(\%devcodes);
+#	AE::log error => "jdbg: ignore: ".Dumper(\%ignore);
+#	AE::log error => "jdbg: retain: ".Dumper(\%retain);
+#	AE::log error => "jdbg: appliances: ".Dumper(\%appls);
+#	AE::log error => "jdbg: lights: " .Dumper(\%lights);
+#	AE::log error => "jdbg: config: " .Dumper(\%config);
     #
     #exit 0;
 ############################################################################
