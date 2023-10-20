@@ -26,7 +26,7 @@ sed -i 's/"mqtt":/},\n   "mqtt":/' /mochad-mqtt.json
 sed -i 's/"mochad":/,\n   "mochad":/' /mochad-mqtt.json
 sed -i 's/"hass":/,\n   "hass":/' /mochad-mqtt.json
 sed -i -n '/"log_level"/{d}p' /mochad-mqtt.json
-#cat /mochad-mqtt.json
+
 
 
 sed -i "s/\"host\": \"xxxxxxxx\"/\"host\": \"$host\"/" /mochad-mqtt.json
@@ -35,7 +35,7 @@ sed -i "s/\"password\": \"xxxxxxxx\"/\"password\": \"$password\"/" /mochad-mqtt.
 sed -i "s/\"port\": \"xxxxxxxx\"/\"port\": \"$port\"/" /mochad-mqtt.json
 
 
-cat /mochad-mqtt.json
+#cat /mochad-mqtt.json
 
 perl /mochad-mqtt.pl
 
