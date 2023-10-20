@@ -31,7 +31,7 @@ You need to configure any X10 devices you want to control. For each X10 device y
 
 Name can be anything you want, but must be at least 4 character long. 
 For powerline devices, code is the housecode + unit number for the X10 device. For RF devices, code is  housecode + 99 + unit number. Note that 99 is just a prefix to the unit number, not added numerically.
-Options for type are switch, light, sensor, remote. State is saved for switch, light, and sensor so only triggers when state changes. Remotes trigger every time on or off are pressed. 
+Options for type are switch, light, sensor, remote. State is saved for switch, light, and sensor, but not for Remote controls. 
 You can copy and paste the configuration to save it or edit it elsewhere.
 
 For using X10 remotes and sensors as triggers in automations select MQTT as the trigger.
