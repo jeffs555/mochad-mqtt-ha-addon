@@ -1,4 +1,4 @@
-# mochad-mqtt-ha
+# mochad-mqtt-ha-addon
 
 Mochad-mqtt-ha-addon provides an alternative to the X10 integration built into Home Assistant. Added features are the ability to receive inputs from X10 remote controls and motion detectors, and use them as triggers in automations to control other devices. In addition to controlling X10 powerline devices, it also allows control directly to and from X10 RF devices. It provides a bridge between the Mosquitto MQTT addon and the [Mochad](https://github.com/FloridaMan7588/mochad-ha-addon) addon. It allows X10 devices to appear to Home Assistant as MQTT devices. It is basically just the Perl script from [mochad-mqtt](https://github.com/timothyh/mochad-mqtt) with a few changes, and the necessary files to make it install as a Home Assistant addon.
 
