@@ -13,7 +13,7 @@ To install this addon, you will need to install the Mosquitto MQTT broker in the
 
 ## Installation
 
-In HA, you go to SETTINGS, ADD-ONS, ADD-ON Store. Then from the 3 dots at the top right, select repositories and add the repository https://github.com/jeffs555/mochad-mqtt-ha-addon. Then from the 3 dot menu, check for updates and mochad-mqtt-ha-addon should appear in the store, and you can click it to install.
+In HA, you go to SETTINGS, ADD-ONS, ADD-ON Store. Then from the 3 dots at the top right, select repositories and add the repository https://github.com/jeffs555/mochad-mqtt-ha-addon. Then from the 3 dot menu, check for updates, then leave and reenter the addons page, and mochad-mqtt-ha-addon should appear in the store, and you can click it to install.
 
 
 
