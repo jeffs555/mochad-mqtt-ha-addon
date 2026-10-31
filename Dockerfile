@@ -1,5 +1,4 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM ghcr.io/home-assistant/base:latest
 
 RUN apk add --update --no-cache wget bash perl perl-anyevent make perl-app-cpanminus perl-sub-name
 RUN cpanm AnyEvent::MQTT
